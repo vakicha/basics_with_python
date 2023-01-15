@@ -1,6 +1,15 @@
-first = int(input())
-second = int(input())
-third = int(input())
+first_part = int(input())
+second_part = int(input())
+third_part = int(input())
 
-total_time = first + second + third
-print(f"{total_time // 60}:{total_time % 60:02d}")
+total_time = first_part + second_part + third_part
+time_min = total_time // 60
+time_sec = total_time % 60
+
+if time_sec < 10:
+    print(f"{time_min}:0{time_sec}")
+else:
+    print(f"{time_min}:{time_sec}")
+
+
+
